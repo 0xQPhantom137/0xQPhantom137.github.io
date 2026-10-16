@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>0xQPhantom137 — Developer</title>
+  <meta name="description" content="Self-taught developer building weird and useful things with AI." />
+  <meta name="theme-color" content="#08080c" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230070f3'/><text x='50' y='68' font-size='58' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'>Q</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background layers -->
+  <div class="noise" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow glow--1" aria-hidden="true"></div>
+  <div class="glow glow--2" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-mark">0x</span>QPhantom137
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#now">Now</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="https://github.com/0xQPhantom137" target="_blank" rel="noopener" class="nav__cta">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="status reveal">
+          <span class="status__dot"></span>
+          <span>Learning in public</span>
+        </div>
+
+        <h1 class="hero__title reveal">
+          Building weird things<br />
+          with AI, one bug at a time.
+        </h1>
+
+        <p class="hero__sub reveal">
+          Self-taught developer using AI as a building partner. I prototype fast,
+          break things often, and try to understand the code underneath as I go.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="https://github.com/0xQPhantom137" target="_blank" rel="noopener" class="btn btn--primary">
+            View GitHub
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 12L12 4M12 4H6M12 4v6"/>
+            </svg>
+          </a>
+          <a href="#projects" class="btn btn--ghost">
+            See projects
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 3v10M4 9l4 4 4-4"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">About</span>
+        </div>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              I'm a self-taught developer learning by shipping. My workflow usually
+              starts with a half-formed idea and an LLM, and ends with something
+              that mostly works — plus a few new things I actually understand now.
+            </p>
+            <p>
+              I don't pretend to know everything. Most of my repos are experiments,
+              some are tools I use daily, and a few are things I built just to see
+              if I could. The code isn't always pretty, but it's mine and it runs.
+            </p>
+            <p>
+              Right now I'm focused on getting better at the fundamentals — reading
+              other people's code, writing cleaner functions, and learning when
+              <em>not</em> to reach for AI.
+            </p>
+          </div>
+
+          <aside class="about__stats reveal">
+            <div class="stat">
+              <div class="stat__num" id="statYears">—</div>
+              <div class="stat__label">Building things</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">AI<span>-first</span></div>
+              <div class="stat__label">Workflow</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">∞</div>
+              <div class="stat__label">Bugs squashed</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects: populated from the GitHub API -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">Projects</span>
+          <div class="section__head-row">
+            <h2 class="section__title">Things I've built</h2>
+            <div class="projects__status" id="projectsStatus" aria-live="polite">
+              <span class="projects__dot projects__dot--loading"></span>
+              <span class="projects__status-text">Loading…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bento" id="projectsGrid" aria-busy="true"></div>
+      </div>
+    </section>
+
+    <!-- Stack: derived from GitHub language distribution -->
+    <section id="stack" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">Stack</span>
+          <div class="section__head-row">
+            <h2 class="section__title">Languages I actually ship in</h2>
+            <div class="projects__status" id="stackStatus" aria-live="polite">
+              <span class="projects__dot projects__dot--loading"></span>
+              <span class="projects__status-text">Loading…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack reveal" id="stackGrid" aria-busy="true"></div>
+      </div>
+    </section>
+
+    <!-- Now: derived from GitHub activity -->
+    <section id="now" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">Now</span>
+          <div class="section__head-row">
+            <h2 class="section__title">What I've been up to</h2>
+            <div class="projects__status" id="nowStatus" aria-live="polite">
+              <span class="projects__dot projects__dot--loading"></span>
+              <span class="projects__status-text">Loading…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="now reveal" id="nowGrid" aria-busy="true"></div>
+
+        <p class="now__source reveal">
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          Derived live from my public GitHub activity.
+          <a href="https://github.com/0xQPhantom137" target="_blank" rel="noopener noreferrer">View profile →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">Contact</span>
+          <h2 class="section__title">Get in touch</h2>
+        </div>
+
+        <div class="contact reveal">
+          <p class="contact__lead">
+            Open to collaboration, feedback, or just talking about weird AI projects.
+          </p>
+
+          <div class="contact__links">
+            <a href="mailto:0xQPhantom137@proton.me" class="contact__email">
+              <span class="contact__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </span>
+              <span class="contact__value">0xQPhantom137@proton.me</span>
+              <span class="contact__arrow" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12L12 4M12 4H6M12 4v6"/>
+                </svg>
+              </span>
+            </a>
+
+            <a href="https://github.com/0xQPhantom137" target="_blank" rel="noopener noreferrer" class="contact__email">
+              <span class="contact__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </span>
+              <span class="contact__value">github.com/0xQPhantom137</span>
+              <span class="contact__arrow" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12L12 4M12 4H6M12 4v6"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">
+        <span class="footer__mark">0x</span>QPhantom137
+      </p>
+      <div class="footer__links">
+        <a href="https://github.com/0xQPhantom137" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:0xQPhantom137@proton.me">Email</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
